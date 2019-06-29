@@ -31,10 +31,13 @@ gulp.task('sass', () => {
 });
 
 gulp.task('scripts', () => {
-    return gulp.src('app/js/modules/**/*.js')
-        .pipe(concat('script.js'))
-        .pipe(gulp.dest('app/js'))
-        .pipe(browserSync.stream({stream: true}));
+    return gulp.src([
+            'app/js/libs/jquery-3.4.1.min.js',
+            'app/js/libs/bootstrap.min.js'
+        ])
+        .pipe(concat('libs.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('app/js/libs'));
 });
 
 gulp.task('img', () => {
@@ -62,10 +65,10 @@ gulp.task('minify-css', () => {
 });
 
 gulp.task('minify-js', () => {
-    return gulp.src('app/js/modules/**/*.js')
+    return gulp.src('app/js/*.js')
         .pipe(uglify())
-        .pipe(concat('script.min.js'))
-        .pipe(gulp.dest('dist/js'))
+        .pipe(concat('scripts.min.js'))
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('clear-dist', (done) => {
@@ -81,7 +84,7 @@ gulp.task('build-dist', (done) => {
     let buildCss = gulp.src('app/css/**/*.css')
         .pipe(gulp.dest('dist/css'));
     
-    let buildJs = gulp.src('app/js/*.js')
+    let buildJs = gulp.src('app/js/**/*')
         .pipe(gulp.dest('dist/js'));
     
     let buildImg = gulp.src('app/img/**/*')
@@ -90,10 +93,11 @@ gulp.task('build-dist', (done) => {
     done();
 });
 
-gulp.task('watch', gulp.parallel('browser-sync', 'sass', 'scripts', () => {
+gulp.task('watch', gulp.parallel('browser-sync', 'sass', () => {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
-    gulp.watch('app/js/**/*.js').on('change', gulp.parallel('scripts'));
+    gulp.watch('app/js/libs/**/*.js', gulp.parallel('scripts'));
+    gulp.watch('app/js/*.js').on('change', browserSync.reload);
     gulp.watch('app/*.html').on('change', browserSync.reload);
 }));
 
-gulp.task('build', gulp.series('clear-dist', 'build-dist', 'minify-html', 'minify-css', 'minify-js', 'img'));
+gulp.task('build', gulp.series('clear-dist', 'img', 'build-dist', 'minify-html', 'minify-css', 'minify-js'));
