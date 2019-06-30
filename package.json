@@ -1,7 +1,7 @@
 {
-  "name": "starttemplate",
+  "name": "creativia",
   "version": "1.0.0",
-  "description": "Start Template for web development",
+  "description": "Creativia Project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
