@@ -1,0 +1,130 @@
+.header {
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png) no-repeat top center / cover;
+    background-blend-mode: darken;
+}
+
+.left__arrow {
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 36px;
+
+    width: 17px;
+    height: 28px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    background: url(../img/left-arrow.png) no-repeat;
+}
+
+.right__arrow {
+    position: absolute;
+    top: 50%;
+    right: 36px;
+
+    width: 17px;
+    height: 28px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    background: url(../img/right-arrow.png) no-repeat;
+}
+
+.header-menu-wrapper {
+    height: 66px;
+
+    background-color: #000;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-height: 66px;
+
+    .header-logo {
+        height: 66px;
+    }
+
+    .header-list {
+        display: flex;
+
+        .list__item {
+            margin-left: 34px;
+
+            .list__link {
+                font-size: 18px;
+                text-transform: uppercase;
+
+                color: $list-item-color;
+
+                &:hover {
+                    padding: 18px 0;
+
+                    border-bottom: 3px solid $brand-color;
+
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.header-content {
+    padding: 218px 0 250px 0;
+
+    text-align: center;
+
+    color: #fff;
+
+    .header__title {
+        margin-bottom: 52px;
+    
+        line-height: 1.2;
+    
+        .header__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .header__description {
+        margin: 0 70px 50px 70px;
+        
+        font-family: 'Lato Regular';
+        font-size: 16px;
+        line-height: 1.375;
+    }
+
+    .header__btn {
+        width: 170px;
+        height: 50px;
+
+        margin: 0 15px;
+
+        font-family: 'Raleway Medium';
+        font-size: 20px;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        border: none;
+        cursor: pointer;
+
+        transition: all .5s ease-in-out;
+
+        background-color: $grey-color;
+        color: #fff;
+
+        &:hover {
+            background-color: $brand-color;
+            color: #fff;
+        }
+    }
+}
