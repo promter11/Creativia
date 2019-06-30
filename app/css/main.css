@@ -214,3 +214,164 @@ a {
   background-color: #ff0036;
   color: #fff;
 }
+
+.section-about {
+  padding: 102px 0;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content .about__title {
+  margin-bottom: 52px;
+  font-family: 'Raleway Medium';
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.about-content .about__title .about__title--colored {
+  color: #ff0036;
+}
+
+.about-content .about__description {
+  margin-bottom: 102px;
+  font-family: 'Lato SemiBold';
+  font-size: 16px;
+  color: #505050;
+}
+
+.about-content .about__description .about__description--colored {
+  color: #ff0036;
+}
+
+.about-content-blocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about-content-blocks .about-content-block-left,
+.about-content-blocks .about-content-block-right {
+  width: 570px;
+}
+
+.about-content-blocks .about-content-block-left {
+  text-align: justify;
+}
+
+.about-content-blocks .about-content-block-left .block-left__description {
+  margin-bottom: 44px;
+  font-family: 'Lato Regular';
+  font-size: 16px;
+  line-height: 1.375;
+  color: #505050;
+}
+
+.about-content-blocks .about-content-block-left .block-who,
+.about-content-blocks .about-content-block-left .block-experiences,
+.about-content-blocks .about-content-block-left .block-learn-more {
+  margin-bottom: 10px;
+}
+
+.about-content-blocks .about-content-block-left .block-who .block-title,
+.about-content-blocks .about-content-block-left .block-experiences .block-title,
+.about-content-blocks .about-content-block-left .block-learn-more .block-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #e7e7e7;
+  background-color: #f7f7f7;
+}
+
+.about-content-blocks .about-content-block-left .block-who .block-title .image,
+.about-content-blocks .about-content-block-left .block-experiences .block-title .image,
+.about-content-blocks .about-content-block-left .block-learn-more .block-title .image {
+  margin: 0 20px;
+  width: 18px;
+  height: 18px;
+}
+
+.about-content-blocks .about-content-block-left .block-who .block-title .title,
+.about-content-blocks .about-content-block-left .block-experiences .block-title .title,
+.about-content-blocks .about-content-block-left .block-learn-more .block-title .title {
+  margin-left: 32px;
+  font-family: 'Raleway Medium';
+  font-size: 20px;
+}
+
+.about-content-blocks .about-content-block-left .block-who .description,
+.about-content-blocks .about-content-block-left .block-experiences .description,
+.about-content-blocks .about-content-block-left .block-learn-more .description {
+  margin: 15px;
+  font-family: 'Lato Regular';
+  font-size: 14px;
+  line-height: 1.5;
+  display: none;
+  color: #505050;
+}
+
+.about-content-blocks .about-content-block-left .block-who .active,
+.about-content-blocks .about-content-block-left .block-experiences .active,
+.about-content-blocks .about-content-block-left .block-learn-more .active {
+  display: block;
+}
+
+.about-content-blocks .about-content-block-right {
+  position: relative;
+}
+
+.about-content-blocks .about-content-block-right .center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 426px;
+  height: 370px;
+  z-index: 10;
+  background: url(../img/center-img.png) no-repeat;
+}
+
+.about-content-blocks .about-content-block-right .left-image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 375px;
+  height: 324px;
+  z-index: 0;
+  background: url(../img/left-img.png) no-repeat;
+}
+
+.about-content-blocks .about-content-block-right .right-image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 375px;
+  height: 324px;
+  z-index: 0;
+  background: url(../img/right-img.png) no-repeat;
+}
