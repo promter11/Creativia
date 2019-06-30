@@ -32,8 +32,7 @@ gulp.task('sass', () => {
 
 gulp.task('scripts', () => {
     return gulp.src([
-            'app/js/libs/jquery-3.4.1.min.js',
-            'app/js/libs/bootstrap.min.js'
+            'app/js/libs/jquery-3.4.1.min.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -100,4 +99,4 @@ gulp.task('watch', gulp.parallel('browser-sync', 'sass', () => {
     gulp.watch('app/*.html').on('change', browserSync.reload);
 }));
 
-gulp.task('build', gulp.series('clear-dist', 'img', 'build-dist', 'minify-html', 'minify-css', 'minify-js'));
+gulp.task('build', gulp.series('clear-dist', 'img', 'scripts', 'build-dist', 'minify-html', 'minify-css', 'minify-js'));
