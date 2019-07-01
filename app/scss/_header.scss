@@ -6,35 +6,33 @@
 }
 
 .left__arrow {
-    display: block;
-
     position: absolute;
     top: 50%;
     left: 36px;
-
-    width: 17px;
-    height: 28px;
-
-    transform: translateY(-50%);
-
-    cursor: pointer;
-
-    background: url(../img/left-arrow.png) no-repeat;
 }
 
 .right__arrow {
     position: absolute;
     top: 50%;
     right: 36px;
+}
 
+.left__arrow,
+.right__arrow {
     width: 17px;
     height: 28px;
+
+    font-size: 30px;
 
     transform: translateY(-50%);
 
     cursor: pointer;
 
-    background: url(../img/right-arrow.png) no-repeat;
+    color: $arrow-color;
+
+    &:hover {
+        color: $brand-color;
+    }
 }
 
 .header-menu-wrapper {
@@ -52,6 +50,8 @@
 
     .header-logo {
         height: 66px;
+
+        outline: none;
     }
 
     .header-list {

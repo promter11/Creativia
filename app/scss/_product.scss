@@ -1,0 +1,141 @@
+.product-section {
+    padding: 82px 0 102px 0;
+}
+
+.product-header {
+    text-align: center;
+
+    .product__title {
+        margin-bottom: 58px;
+
+        font-family: 'Raleway Medium';
+        font-size: 30px;
+        line-height: 1.2;
+
+        .product__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .product__description {
+        margin-bottom: 102px;
+
+        font-family: 'Lato Black';
+        font-size: 16px;
+
+        color: $description-color;
+
+        .product__description--colored {
+            color: $brand-color;
+        }
+    }
+}
+
+.product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-block,
+    .right-block {
+        width: 370px;
+
+        .feature {
+            margin-bottom: 10px;
+
+            border: 1px solid $border-color;
+
+            .block-feature {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                padding: 10px;
+
+                transition: all .25s ease-in-out;
+
+                &:hover {
+                    background-color: $brand-color;
+
+                    .feature__title {
+                        color: #fff;
+                    }
+
+                    .feature-ok {
+                        background-color: #fff;
+
+                        .ok__image {
+                            color: $brand-color;
+                        }
+                    }
+                }
+
+                .feature__title {
+                    font-family: 'Raleway Regular';
+                    font-size: 20px;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+
+                    color: $grey-color-2;
+                }
+
+                .feature-ok {
+                    margin: 0 14px;
+                    padding: 8px 10px;
+
+                    font-size: 12px;
+
+                    clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
+
+                    background-color: $border-color;
+
+                    .ok__image {
+                        color: $grey-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .center-block {
+        width: 370px;
+
+        .product__btn {
+            display: block;
+        
+            width: 170px;
+            height: 50px;
+        
+            margin: 78px auto;
+        
+            font-family: 'Raleway Medium';
+            font-size: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        
+            border: none;
+            cursor: pointer;
+        
+            transition: all .5s ease-in-out;
+        
+            background-color: $grey-color;
+            color: #fff;
+        
+            &:hover {
+                background-color: $brand-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .right-block {
+
+        .feature {
+
+            .block-feature {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

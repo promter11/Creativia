@@ -9,12 +9,14 @@
 
     <script src="/js/libs/libs.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/322c011d41.js"></script>
+
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header class="header">
-        <div class="left__arrow"></div>
-        <div class="right__arrow"></div>
+        <i class="fas fa-chevron-left left__arrow"></i>
+        <i class="fas fa-chevron-right right__arrow"></i>
         <div class="header-menu-wrapper">
             <div class="container">
                 <div class="header-menu">
@@ -45,33 +47,33 @@
             </div>
         </div>
     </header>
-    <section class="section-about">
+    <section class="about-section">
         <div class="container">
             <div class="about-content">
                 <h1 class="about__title">about <span class="about__title--colored">creativia</span></h1>
-                <p class="about__description">Lorem ipsum dolor sit amet consectetur <span class="about__description--colored">adipisicing elit.</span> Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
+                <p class="about__description">Lorem ipsum dolor sit amet consectetur <a class="about__description--colored" href="#">adipisicing elit.</a> Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
                 <div class="about-content-blocks">
                     <div class="about-content-block-left">
                         <p class="block-left__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae.</p>
                         <div class="block-who">
-                            <div class="block-title">
-                                <img class="image" src="../img/plus-icon.png" alt="Plus">
+                            <a class="block-title" href="#">
+                                <i class="fas fa-plus-circle image"></i>
                                 <h2 class="title">Who is creativia</h2>
-                            </div>
+                            </a>
                             <p class="description active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                         </div>
                         <div class="block-experiences">
-                            <div class="block-title">
-                                <img class="image" src="../img/plus-icon.png" alt="Plus">
+                            <a class="block-title" href="#">
+                                <i class="fas fa-plus-circle image"></i>
                                 <h2 class="title">Experiences</h2>
-                            </div>
+                            </a>
                             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                         </div>
                         <div class="block-learn-more">
-                            <div class="block-title">
-                                <img class="image" src="../img/plus-icon.png" alt="Plus">
+                            <a class="block-title" href="#">
+                                <i class="fas fa-plus-circle image"></i>
                                 <h2 class="title">Learn more</h2>
-                            </div>
+                            </a>
                             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                         </div>
                     </div>
@@ -82,8 +84,198 @@
                     </div>
                 </div>
             </div>
+            <div class="separator">
+                <div class="line">
+                    <div class="hexagon"></div>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="features-section">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-block">
+                    <div class="feature-hexagon-outside">
+                        <div class="feature-hexagon-inside">
+                            <i class="fas fa-heart feature__image"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature__title">Flat design</h3>
+                    <p class="feature__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentensque vivamus eget mauris fuscesit amet</p>
+                </div>
+                <div class="features-block">
+                    <div class="feature-hexagon-outside">
+                        <div class="feature-hexagon-inside">
+                            <i class="fas fa-check feature__image"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature__title">Retina ready</h3>
+                    <p class="feature__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentensque vivamus eget mauris fuscesit amet</p>
+                </div>
+                <div class="features-block">
+                    <div class="feature-hexagon-outside">
+                        <div class="feature-hexagon-inside">
+                            <i class="fas fa-tablet-alt feature__image"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature__title">Responsive</h3>
+                    <p class="feature__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentensque vivamus eget mauris fuscesit amet</p>
+                </div>
+                <div class="features-block">
+                    <div class="feature-hexagon-outside">
+                        <div class="feature-hexagon-inside">
+                            <i class="fas fa-fire feature__image"></i>
+                        </div>
+                    </div>
+                    <h3 class="feature__title">Clean & useful</h3>
+                    <p class="feature__description">Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentensque vivamus eget mauris fuscesit amet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-header">
+                <h1 class="portfolio__title">portfolio</h1>
+                <ul class="portfolio-list">
+                    <li class="list__item"><a class="list__link" href="#">All</a></li>
+                    <li class="list__item"><a class="list__link" href="#">Illustration</a></li>
+                    <li class="list__item"><a class="list__link" href="#">Digital art</a></li>
+                    <li class="list__item"><a class="list__link" href="#">Web design</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-first-line">
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-1.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">money</span>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-2.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">government</span>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-3.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">flowers</span>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-4.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">credit cards</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-second-line">
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-5.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">calculator</span>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-6.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">exchange</span>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-7.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">wallet</span>
+                    </div>
+                </div>
+                <div class="portfolio-block">
+                    <img class="portfolio__image" src="../img/portfolio-img-8.png" alt="Portfolio Image">
+                    <div class="information-block">
+                        <i class="fas fa-plus portfolio__add"></i>
+                        <span class="portfolio__title">check</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="product-section">
+        <div class="container">
+            <div class="product-header">
+                <h1 class="product__title">our <span class="product__title--colored">product features</span></h1>
+                <p class="product__description">Lorem ipsum dolor sit amet consectetur <a class="product__description--colored" href="#">adipisicing elit.</a> Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
+            </div>
+            <div class="product-content">
+                <div class="left-block">
+                    <div class="feature">
+                        <a class="block-feature" href="#">
+                            <h2 class="feature__title">Unlimited color options</h2>
+                            <div class="feature-ok">
+                                <i class="fas fa-check ok__image"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a class="block-feature" href="#">
+                            <h2 class="feature__title">Outstanding support</h2>
+                            <div class="feature-ok">
+                                <i class="fas fa-check ok__image"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a class="block-feature" href="#">
+                            <h2 class="feature__title">Retina ready</h2>
+                            <div class="feature-ok">
+                                <i class="fas fa-check ok__image"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="center-block">
+                    <div class="block-image">
+                        <img class="product__image" src="../img/tablet-img.png" alt="Image">
+                    </div>
+                    <button class="product__btn">Free psd</button>
+                </div>
+                <div class="right-block">
+                    <div class="feature">
+                        <a class="block-feature" href="#">
+                            <div class="feature-ok">
+                                <i class="fas fa-check ok__image"></i>
+                            </div>
+                            <h2 class="feature__title">Unlimited color options</h2>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a class="block-feature" href="#">
+                            <div class="feature-ok">
+                                <i class="fas fa-check ok__image"></i>
+                            </div>
+                            <h2 class="feature__title">Outstanding support</h2>
+                        </a>
+                    </div>
+                    <div class="feature">
+                        <a class="block-feature" href="#">
+                            <div class="feature-ok">
+                                <i class="fas fa-check ok__image"></i>
+                            </div>
+                            <h2 class="feature__title">Retina ready</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="/js/scripts.js"></script>
 </body>
