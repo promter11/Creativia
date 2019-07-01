@@ -8,7 +8,7 @@
     .about__title {
         margin-bottom: 52px;
 
-        font-family: 'Raleway Medium';
+        font-family: 'Raleway Bold';
         font-size: 30px;
         line-height: 1.2;
 
@@ -20,7 +20,7 @@
     .about__description {
         margin-bottom: 102px;
 
-        font-family: 'Lato Black';
+        font-family: 'Lato Bold';
         font-size: 16px;
 
         color: $description-color;
@@ -87,7 +87,7 @@
                 .title {
                     margin-left: 32px;
     
-                    font-family: 'Raleway Medium';
+                    font-family: 'Raleway Bold';
                     font-size: 20px;
                 }
             }
@@ -125,7 +125,7 @@
 
             z-index: 10;
 
-            background: url(../img/center-img.png) no-repeat;
+            background: url(/img/center-img.png) no-repeat;
         }
 
         .left-image {
@@ -140,7 +140,7 @@
 
             z-index: 0;
 
-            background: url(../img/left-img.png) no-repeat;
+            background: url(/img/left-img.png) no-repeat;
         }
 
         .right-image {
@@ -155,7 +155,7 @@
 
             z-index: 0;
 
-            background: url(../img/right-img.png) no-repeat;
+            background: url(/img/right-img.png) no-repeat;
         }
     }
 }

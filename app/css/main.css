@@ -1,63 +1,63 @@
 @font-face {
   font-family: 'Lato Light';
-  src: url("/app/fonts/Lato/Lato-Light.eot");
-  src: url("/app/fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Lato/Lato-Light.woff") format("woff"), url("/app/fonts/Lato/Lato-Light.ttf") format("truetype");
+  src: url("/fonts/Lato/Lato-Light.eot");
+  src: url("/fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato/Lato-Light.woff") format("woff"), url("/fonts/Lato/Lato-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato Regular';
-  src: url("/app/fonts/Lato/Lato-Regular.eot");
-  src: url("/app/fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Lato/Lato-Regular.woff") format("woff"), url("/app/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  src: url("/fonts/Lato/Lato-Regular.eot");
+  src: url("/fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato/Lato-Regular.woff") format("woff"), url("/fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato Bold';
-  src: url("/app/fonts/Lato/Lato-Bold.eot");
-  src: url("/app/fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Lato/Lato-Bold.woff") format("woff"), url("/app/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  src: url("/fonts/Lato/Lato-Bold.eot");
+  src: url("/fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato/Lato-Bold.woff") format("woff"), url("/fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato Black';
-  src: url("/app/fonts/Lato/Lato-Black.eot");
-  src: url("/app/fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Lato/Lato-Black.woff") format("woff"), url("/app/fonts/Lato/Lato-Black.ttf") format("truetype");
+  src: url("/fonts/Lato/Lato-Black.eot");
+  src: url("/fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato/Lato-Black.woff") format("woff"), url("/fonts/Lato/Lato-Black.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway Regular';
-  src: url("/app/fonts/Raleway/Raleway-Regular.eot");
-  src: url("/app/fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Raleway/Raleway-Regular.woff") format("woff"), url("/app/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+  src: url("/fonts/Raleway/Raleway-Regular.eot");
+  src: url("/fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Raleway/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway/Raleway-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway Medium';
-  src: url("/app/fonts/Raleway/Raleway-Medium.eot");
-  src: url("/app/fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Raleway/Raleway-Medium.woff") format("woff"), url("/app/fonts/Raleway/Raleway-Medium.ttf") format("truetype");
+  src: url("/fonts/Raleway/Raleway-Medium.eot");
+  src: url("/fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Raleway/Raleway-Medium.woff") format("woff"), url("/fonts/Raleway/Raleway-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway Semibold';
-  src: url("/app/fonts/Raleway/Raleway-SemiBold.eot");
-  src: url("/app/fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("/app/fonts/Raleway/Raleway-SemiBold.ttf") format("truetype");
+  src: url("/fonts/Raleway/Raleway-SemiBold.eot");
+  src: url("/fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("/fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("/fonts/Raleway/Raleway-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway Bold';
-  src: url("/app/fonts/Raleway/Raleway-Bold.eot");
-  src: url("/app/fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Raleway/Raleway-Bold.woff") format("woff"), url("/app/fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+  src: url("/fonts/Raleway/Raleway-Bold.eot");
+  src: url("/fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Raleway/Raleway-Bold.woff") format("woff"), url("/fonts/Raleway/Raleway-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -92,7 +92,7 @@ a {
 
 .header {
   position: relative;
-  background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png) no-repeat top center/cover;
+  background: rgba(0, 0, 0, 0.7) url(/img/header-bg.png) no-repeat top center/cover;
   background-blend-mode: darken;
 }
 
@@ -148,6 +148,9 @@ a {
 
 .header-menu .header-logo {
   height: 66px;
+}
+
+.header-menu .header-logo .logo__link {
   outline: none;
 }
 
@@ -228,7 +231,7 @@ a {
 
 .about-content .about__title {
   margin-bottom: 52px;
-  font-family: 'Raleway Medium';
+  font-family: 'Raleway Bold';
   font-size: 30px;
   line-height: 1.2;
 }
@@ -239,7 +242,7 @@ a {
 
 .about-content .about__description {
   margin-bottom: 102px;
-  font-family: 'Lato Black';
+  font-family: 'Lato Bold';
   font-size: 16px;
   color: #505050;
 }
@@ -323,7 +326,7 @@ a {
 .about-content-blocks .about-content-block-left .block-experiences .block-title .title,
 .about-content-blocks .about-content-block-left .block-learn-more .block-title .title {
   margin-left: 32px;
-  font-family: 'Raleway Medium';
+  font-family: 'Raleway Bold';
   font-size: 20px;
 }
 
@@ -358,7 +361,7 @@ a {
   width: 426px;
   height: 370px;
   z-index: 10;
-  background: url(../img/center-img.png) no-repeat;
+  background: url(/img/center-img.png) no-repeat;
 }
 
 .about-content-blocks .about-content-block-right .left-image {
@@ -371,7 +374,7 @@ a {
   width: 375px;
   height: 324px;
   z-index: 0;
-  background: url(../img/left-img.png) no-repeat;
+  background: url(/img/left-img.png) no-repeat;
 }
 
 .about-content-blocks .about-content-block-right .right-image {
@@ -384,7 +387,7 @@ a {
   width: 375px;
   height: 324px;
   z-index: 0;
-  background: url(../img/right-img.png) no-repeat;
+  background: url(/img/right-img.png) no-repeat;
 }
 
 .separator .line {
@@ -492,7 +495,7 @@ a {
 }
 
 .features-section .features-content .features-block .feature__title {
-  font-family: 'Raleway Medium';
+  font-family: 'Raleway Bold';
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -517,7 +520,7 @@ a {
 }
 
 .portfolio-header .portfolio__title {
-  font-family: 'Raleway Medium';
+  font-family: 'Raleway Bold';
   font-size: 30px;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -538,7 +541,7 @@ a {
 }
 
 .portfolio-header .portfolio-list .list__item {
-  font-family: 'Lato SemiBold';
+  font-family: 'Lato Bold';
   font-size: 16px;
   line-height: 1.375;
   text-transform: uppercase;
@@ -635,7 +638,7 @@ a {
 
 .product-header .product__title {
   margin-bottom: 58px;
-  font-family: 'Raleway Medium';
+  font-family: 'Raleway Bold';
   font-size: 30px;
   line-height: 1.2;
 }
@@ -646,7 +649,7 @@ a {
 
 .product-header .product__description {
   margin-bottom: 102px;
-  font-family: 'Lato Black';
+  font-family: 'Lato Bold';
   font-size: 16px;
   color: #505050;
 }
@@ -749,7 +752,18 @@ a {
   width: 370px;
 }
 
-.product-content .center-block .product__btn {
+.product-content .right-block .feature .block-feature {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.product__btn {
   display: block;
   width: 170px;
   height: 50px;
@@ -767,18 +781,7 @@ a {
   color: #fff;
 }
 
-.product-content .center-block .product__btn:hover {
+.product__btn:hover {
   background-color: #ff0036;
   color: #fff;
-}
-
-.product-content .right-block .feature .block-feature {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
 }

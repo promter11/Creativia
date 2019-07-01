@@ -1,7 +1,7 @@
 .header {
     position: relative;
 
-    background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png) no-repeat top center / cover;
+    background: rgba(0, 0, 0, 0.7) url(/img/header-bg.png) no-repeat top center / cover;
     background-blend-mode: darken;
 }
 
@@ -51,7 +51,9 @@
     .header-logo {
         height: 66px;
 
-        outline: none;
+        .logo__link {
+            outline: none;
+        }
     }
 
     .header-list {
