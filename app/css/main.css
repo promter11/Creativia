@@ -73,16 +73,53 @@ body {
   font-family: 'Raleway Regular';
 }
 
+h1 {
+  font-family: 'Raleway Bold';
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Raleway Medium';
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Raleway Bold';
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'Lato Bold';
+  font-size: 16px;
+  line-height: 1.375;
+  color: #505050;
+}
+
 ul {
   list-style-type: none;
 }
 
-li {
+li,
+a {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
+button {
+  font-family: 'Lato Regular';
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .container {
@@ -96,15 +133,17 @@ a {
   background-blend-mode: darken;
 }
 
-.left__arrow {
+.left__arrow,
+.right__arrow {
   position: absolute;
   top: 50%;
+}
+
+.left__arrow {
   left: 36px;
 }
 
 .right__arrow {
-  position: absolute;
-  top: 50%;
   right: 36px;
 }
 
@@ -185,7 +224,6 @@ a {
 
 .header-content .header__title {
   margin-bottom: 52px;
-  line-height: 1.2;
 }
 
 .header-content .header__title .header__title--colored {
@@ -194,31 +232,18 @@ a {
 
 .header-content .header__description {
   margin: 0 70px 50px 70px;
-  font-family: 'Lato Regular';
-  font-size: 16px;
-  line-height: 1.375;
 }
 
 .header-content .header__btn {
-  width: 170px;
-  height: 50px;
   margin: 0 15px;
-  font-family: 'Raleway Medium';
-  font-size: 20px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  width: 170px;
+  height: 55px;
   background-color: #131313;
   color: #fff;
 }
 
 .header-content .header__btn:hover {
   background-color: #ff0036;
-  color: #fff;
 }
 
 .about-section {
@@ -231,9 +256,6 @@ a {
 
 .about-content .about__title {
   margin-bottom: 52px;
-  font-family: 'Raleway Bold';
-  font-size: 30px;
-  line-height: 1.2;
 }
 
 .about-content .about__title .about__title--colored {
@@ -242,9 +264,6 @@ a {
 
 .about-content .about__description {
   margin-bottom: 102px;
-  font-family: 'Lato Bold';
-  font-size: 16px;
-  color: #505050;
 }
 
 .about-content .about__description .about__description--colored {
@@ -278,10 +297,6 @@ a {
 
 .about-content-blocks .about-content-block-left .block-left__description {
   margin-bottom: 44px;
-  font-family: 'Lato Regular';
-  font-size: 16px;
-  line-height: 1.375;
-  color: #505050;
 }
 
 .about-content-blocks .about-content-block-left .block-who,
@@ -333,12 +348,11 @@ a {
 .about-content-blocks .about-content-block-left .block-who .description,
 .about-content-blocks .about-content-block-left .block-experiences .description,
 .about-content-blocks .about-content-block-left .block-learn-more .description {
+  display: none;
   margin: 15px;
   font-family: 'Lato Regular';
   font-size: 14px;
   line-height: 1.5;
-  display: none;
-  color: #505050;
 }
 
 .about-content-blocks .about-content-block-left .block-who .active,
@@ -495,9 +509,6 @@ a {
 }
 
 .features-section .features-content .features-block .feature__title {
-  font-family: 'Raleway Bold';
-  font-size: 20px;
-  line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 26px;
   color: #262626;
@@ -505,9 +516,6 @@ a {
 
 .features-section .features-content .features-block .feature__description {
   font-family: 'Lato Regular';
-  font-size: 16px;
-  line-height: 1.375;
-  color: #505050;
 }
 
 .portfolio-section {
@@ -520,9 +528,6 @@ a {
 }
 
 .portfolio-header .portfolio__title {
-  font-family: 'Raleway Bold';
-  font-size: 30px;
-  line-height: 1.2;
   margin-bottom: 30px;
   color: #fff;
 }
@@ -638,9 +643,6 @@ a {
 
 .product-header .product__title {
   margin-bottom: 58px;
-  font-family: 'Raleway Bold';
-  font-size: 30px;
-  line-height: 1.2;
 }
 
 .product-header .product__title .product__title--colored {
@@ -649,9 +651,6 @@ a {
 
 .product-header .product__description {
   margin-bottom: 102px;
-  font-family: 'Lato Bold';
-  font-size: 16px;
-  color: #505050;
 }
 
 .product-header .product__description .product__description--colored {
@@ -726,9 +725,6 @@ a {
 
 .product-content .left-block .feature .block-feature .feature__title,
 .product-content .right-block .feature .block-feature .feature__title {
-  font-family: 'Raleway Regular';
-  font-size: 20px;
-  line-height: 1.2;
   text-transform: uppercase;
   color: #262626;
 }
@@ -764,24 +760,14 @@ a {
 }
 
 .product__btn {
-  display: block;
   width: 170px;
   height: 50px;
-  margin: 78px auto;
-  font-family: 'Raleway Medium';
-  font-size: 20px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
   background-color: #131313;
   color: #fff;
+  display: block;
+  margin: 78px auto;
 }
 
 .product__btn:hover {
   background-color: #ff0036;
-  color: #fff;
 }

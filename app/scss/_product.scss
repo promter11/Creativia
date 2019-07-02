@@ -8,10 +8,6 @@
     .product__title {
         margin-bottom: 58px;
 
-        font-family: 'Raleway Bold';
-        font-size: 30px;
-        line-height: 1.2;
-
         .product__title--colored {
             color: $brand-color;
         }
@@ -19,11 +15,6 @@
 
     .product__description {
         margin-bottom: 102px;
-
-        font-family: 'Lato Bold';
-        font-size: 16px;
-
-        color: $description-color;
 
         .product__description--colored {
             color: $brand-color;
@@ -71,9 +62,6 @@
                 }
 
                 .feature__title {
-                    font-family: 'Raleway Regular';
-                    font-size: 20px;
-                    line-height: 1.2;
                     text-transform: uppercase;
 
                     color: $grey-color-2;
@@ -114,28 +102,13 @@
 }
 
 .product__btn {
-    display: block;
+    @include add_button(170px, 50px, $grey-color, #fff);
 
-    width: 170px;
-    height: 50px;
+    display: block;
 
     margin: 78px auto;
 
-    font-family: 'Raleway Medium';
-    font-size: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-
-    border: none;
-    cursor: pointer;
-
-    transition: all .5s ease-in-out;
-
-    background-color: $grey-color;
-    color: #fff;
-
     &:hover {
         background-color: $brand-color;
-        color: #fff;
     }
 }

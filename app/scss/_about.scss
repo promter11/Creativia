@@ -8,10 +8,6 @@
     .about__title {
         margin-bottom: 52px;
 
-        font-family: 'Raleway Bold';
-        font-size: 30px;
-        line-height: 1.2;
-
         .about__title--colored {
             color: $brand-color;
         }
@@ -19,11 +15,6 @@
 
     .about__description {
         margin-bottom: 102px;
-
-        font-family: 'Lato Bold';
-        font-size: 16px;
-
-        color: $description-color;
 
         .about__description--colored {
             color: $brand-color;
@@ -48,12 +39,6 @@
 
         .block-left__description {
             margin-bottom: 44px;
-
-            font-family: 'Lato Regular';
-            font-size: 16px;
-            line-height: 1.375;
-
-            color: $description-color;
         }
 
         .block-who,
@@ -93,15 +78,13 @@
             }
 
             .description {
+                display: none;
+
                 margin: 15px;
 
                 font-family: 'Lato Regular';
                 font-size: 14px;
                 line-height: 1.5;
-
-                display: none;
-
-                color: $description-color;
             }
 
             .active {

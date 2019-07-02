@@ -53,9 +53,6 @@
             }
 
             .feature__title {
-                font-family: 'Raleway Bold';
-                font-size: 20px;
-                line-height: 1.2;
                 text-transform: uppercase;
 
                 margin-bottom: 26px;
@@ -65,10 +62,6 @@
 
             .feature__description {
                 font-family: 'Lato Regular';
-                font-size: 16px;
-                line-height: 1.375;
-
-                color: $description-color;
             }
         }
     }

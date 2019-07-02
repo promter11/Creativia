@@ -1,0 +1,7 @@
+@mixin add_button($width, $height, $bg-color, $color) {
+    width: $width;
+    height: $height;
+
+    background-color: $bg-color;
+    color: $color;
+}
