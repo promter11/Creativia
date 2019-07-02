@@ -1,0 +1,128 @@
+.teamwork-section {
+    padding: 102px 0;
+}
+
+.teamwork-header {
+    text-align: center;
+
+    .teamwork__title {
+        margin-bottom: 52px;
+
+        .teamwork__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .teamwork__description {
+        margin-bottom: 98px;
+
+        .teamwork__description--colored {
+            color: $brand-color;
+        }
+    }
+}
+
+.teamwork-content {
+    margin-bottom: 110px;
+
+    .teamwork-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: center;
+
+        .team-block {
+            border: 1px solid $border-color;
+
+            transition: all .5s ease-in-out;
+
+            cursor: pointer;
+
+            .team__image {
+                width: 270px;
+                height: 240px;
+
+                margin-bottom: 32px;
+
+                transition: all .5s ease-in-out;
+
+                background-blend-mode: darken;
+
+                .social {
+                    display: none;
+
+                    .social-block {
+                        margin: 40% 0;
+                        padding: 0 6px;
+                        
+                        .social__link {
+                            padding: 12px;
+
+                            font-size: 16px;
+
+                            clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
+    
+                            background-color: #fff;
+                            color: $brand-color;
+
+                            .social__image {
+                                width: 21px;
+                                height: 21px;
+                            }
+                        }   
+                    }
+                }
+            }
+
+            .team__image-1 {
+                background: url(/img/team-img-1.png) no-repeat;
+            }
+
+            .team__image-2 {
+                background: url(/img/team-img-2.png) no-repeat;
+            }
+
+            .team__image-3 {
+                background: url(/img/team-img-3.png) no-repeat;
+            }
+
+            .team__image-4 {
+                background: url(/img/team-img-4.png) no-repeat;
+            }
+
+            .team__name {
+                margin-bottom: 24px;
+
+                text-transform: uppercase;
+
+                transition: all .5s ease-in-out;
+
+                color: $grey-color-2;
+            }
+
+            .team__position {
+                margin-bottom: 36px;
+
+                font-family: 'Lato Regular';
+            }
+
+            &:hover {
+                border-bottom: 1px solid #000;
+
+                .team__image {
+                    background-color: #000;
+
+                    .social {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                .team__name {
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+}

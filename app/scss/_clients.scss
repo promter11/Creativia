@@ -1,0 +1,131 @@
+.clients-section {
+    padding: 98px 0;
+
+    background: rgba(0, 0, 0, 0.9) url(/img/clients-bg.png) no-repeat top center / cover;
+    background-blend-mode: darken;
+}
+
+.clients-header {
+    text-align: center;
+
+    .clients__title {
+        margin-bottom: 52px;
+
+        color: #fff;
+
+        .clients__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .clients__description {
+        margin-bottom: 98px;
+
+        color: $lightgrey-color;
+
+        .clients__description--colored {
+            color: $brand-color;
+        }
+    }
+}
+
+.clients-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .clients-content-block-left,
+    .clients-content-block-right {
+        width: 570px;
+    }
+
+    .clients-content-block-left {
+        text-align: center;
+
+        .review-block {
+
+            .review__title {
+                margin-bottom: 52px;
+
+                text-transform: uppercase;
+
+                color: #fff;
+            }
+
+            .review__description {
+                margin-bottom: 52px;
+
+                font-family: 'Lato Regular';
+
+                color: $lightgrey-color;
+            }
+
+            .client-block {
+
+                .client__image {
+                    margin-bottom: 14px;
+                }
+
+                .client__name {
+                    margin-bottom: 26px;
+
+                    text-transform: uppercase;
+
+                    color: $brand-color;
+                }
+            }
+        }
+
+        .square-block {
+            display: flex;
+            justify-content: center;
+
+            .square {
+                width: 8px;
+                height: 8px;
+
+                margin: 0 3px;
+
+                cursor: pointer;
+
+                background-color: $lightgrey-color;
+
+                &:hover {
+                    background-color: $brand-color;
+                }
+            }
+        }
+    }
+
+    .clients-content-block-right {
+        
+        
+        .companies-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .company-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 270px;
+                height: 116px;
+
+                margin: 20px 0;
+
+                box-shadow: inset 0px 0px 68px 0px rgba(0, 0, 0, 0.75);
+
+                background-color: #fff;
+
+                .company__name {
+                    margin-left: 4px;
+
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
