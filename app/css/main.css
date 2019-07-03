@@ -112,7 +112,7 @@ a {
 
 button {
   font-family: 'Lato Regular';
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
   border: none;
@@ -422,33 +422,11 @@ button {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 10px;
+  width: 20px;
   height: 20px;
+  -webkit-clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
+  clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
   background-color: #131313;
-}
-
-.separator .line .hexagon:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -5px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 5px solid #131313;
-}
-
-.separator .line .hexagon:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -5px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 5px solid #131313;
 }
 
 .features-section {
@@ -567,27 +545,28 @@ button {
 }
 
 .portfolio-content {
-  width: 1400px;
-  margin: 0 auto;
-}
-
-.portfolio-content .portfolio-first-line,
-.portfolio-content .portfolio-second-line {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block,
-.portfolio-content .portfolio-second-line .portfolio-block {
+.portfolio-content .portfolio-block {
   position: relative;
   cursor: pointer;
   color: #fff;
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block .portfolio__image,
-.portfolio-content .portfolio-second-line .portfolio-block .portfolio__image {
+.portfolio-content .portfolio-block .portfolio__image {
   display: block;
   width: 100%;
   height: 100%;
@@ -596,24 +575,20 @@ button {
   transition: all .25s ease-in-out;
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block .portfolio__image:hover,
-.portfolio-content .portfolio-second-line .portfolio-block .portfolio__image:hover {
+.portfolio-content .portfolio-block .portfolio__image:hover {
   -webkit-filter: brightness(30%);
   filter: brightness(30%);
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block:hover .information-block,
-.portfolio-content .portfolio-second-line .portfolio-block:hover .information-block {
-  visibility: visible;
+.portfolio-content .portfolio-block:hover .information-block {
+  display: block;
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block .information-block,
-.portfolio-content .portfolio-second-line .portfolio-block .information-block {
-  visibility: hidden;
+.portfolio-content .portfolio-block .information-block {
+  display: none;
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block .information-block .portfolio__add,
-.portfolio-content .portfolio-second-line .portfolio-block .information-block .portfolio__add {
+.portfolio-content .portfolio-block .information-block .portfolio__add {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -623,8 +598,7 @@ button {
   transform: translate(-50%, -55%);
 }
 
-.portfolio-content .portfolio-first-line .portfolio-block .information-block .portfolio__title,
-.portfolio-content .portfolio-second-line .portfolio-block .information-block .portfolio__title {
+.portfolio-content .portfolio-block .information-block .portfolio__title {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -641,6 +615,7 @@ button {
 }
 
 .product-header {
+  margin-bottom: 102px;
   text-align: center;
 }
 
@@ -652,11 +627,7 @@ button {
   color: #ff0036;
 }
 
-.product-header .product__description {
-  margin-bottom: 102px;
-}
-
-.product-header .product__description .product__description--colored {
+.product-header .product__description--colored {
   color: #ff0036;
 }
 
@@ -673,6 +644,7 @@ button {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 98px;
 }
 
 .product-content .left-block,
@@ -748,7 +720,54 @@ button {
 }
 
 .product-content .center-block {
+  position: relative;
   width: 370px;
+  z-index: 100;
+}
+
+.product-content .center-block .front-block,
+.product-content .center-block .back-block {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 470px;
+  height: 200px;
+}
+
+.product-content .center-block .front-block {
+  bottom: -115px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+  background-color: #262626;
+}
+
+.product-content .center-block .back-block {
+  top: 208px;
+  z-index: -10;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background-color: #505050;
+}
+
+.product-content .center-block .product__btn {
+  width: 170px;
+  height: 50px;
+  background-color: #505050;
+  color: #fff;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  transform: translate(-50%, -90%);
+  display: block;
+  margin: 78px auto;
+}
+
+.product-content .center-block .product__btn:hover {
+  background-color: #ff0036;
 }
 
 .product-content .right-block .feature .block-feature {
@@ -760,19 +779,6 @@ button {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-}
-
-.product__btn {
-  width: 170px;
-  height: 50px;
-  background-color: #131313;
-  color: #fff;
-  display: block;
-  margin: 78px auto;
-}
-
-.product__btn:hover {
-  background-color: #ff0036;
 }
 
 .clients-section {
@@ -997,8 +1003,8 @@ button {
 }
 
 .teamwork-content .teamwork-block .team-block .team__image .social .social-block .social__link .social__image {
-  width: 21px;
-  height: 21px;
+  width: 22px;
+  height: 22px;
 }
 
 .teamwork-content .teamwork-block .team-block .team__image-1 {
@@ -1098,42 +1104,38 @@ button {
   margin: 0 15px;
 }
 
-.skills-content .skills-block .skill .skill-circle-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 142px;
-  height: 142px;
+.skills-content .skills-block .skill .skill-circle {
+  position: relative;
+  width: 146px;
+  height: 146px;
+  margin: 0 auto 24px auto;
+  border: 3px solid #e7e7e7;
   border-radius: 50%;
-  margin: 0 auto 26px auto;
-  background-color: #ff0036;
+  background-color: transparent;
 }
 
-.skills-content .skills-block .skill .skill-circle-wrapper .skill-circle {
-  width: 97%;
-  height: 97%;
-  margin: 0 auto;
+.skills-content .skills-block .skill .skill-circle:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #ff0036;
+  border-left: 3px solid #ff0036;
+  border-bottom: 3px solid #ff0036;
   border-radius: 50%;
-  background-color: #fff;
 }
 
-.skills-content .skills-block .skill .skill-circle-wrapper .skill-circle .number {
+.skills-content .skills-block .skill .skill-circle .number {
   font-family: 'Lato Light';
   font-size: 40px;
   line-height: 2.375;
   color: #ff0036;
 }
 
-.skills-content .skills-block .skill .skill-circle-wrapper .skill-circle .number .percent {
+.skills-content .skills-block .skill .skill-circle .number .percent {
   line-height: 142px;
   color: #131313;
 }
@@ -1498,6 +1500,7 @@ button {
   height: 40px;
   background-color: #262626;
   color: #fff;
+  font-size: 16px;
 }
 
 .blog-content .new-block .new-information .information__btn:hover {
@@ -1759,9 +1762,4 @@ button {
   justify-content: center;
   padding: 30px 0;
   background-color: #262626;
-}
-
-.footer-section .footer-logo {
-  width: 120px;
-  height: 40px;
 }

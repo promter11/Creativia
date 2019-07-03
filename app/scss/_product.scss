@@ -3,6 +3,8 @@
 }
 
 .product-header {
+    margin-bottom: 102px;
+
     text-align: center;
 
     .product__title {
@@ -13,12 +15,8 @@
         }
     }
 
-    .product__description {
-        margin-bottom: 102px;
-
-        .product__description--colored {
-            color: $brand-color;
-        }
+    .product__description--colored {
+        color: $brand-color;
     }
 }
 
@@ -26,6 +24,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 98px;
 
     .left-block,
     .right-block {
@@ -86,7 +86,58 @@
     }
 
     .center-block {
+        position: relative;
+
         width: 370px;
+
+        z-index: 100;
+
+        .front-block,
+        .back-block {
+            position: absolute;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 470px;
+            height: 200px;
+        }
+
+        .front-block {
+            bottom: -115px;
+
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+
+            background-color: $grey-color-2;
+        }
+
+        .back-block {
+            top: 208px;
+
+            z-index: -10;
+
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+            background-color: $description-color;
+        }
+
+        .product__btn {
+            @include add_button(170px, 50px, $description-color, #fff);
+
+            position: absolute;
+            top: 90%;
+            left: 50%;
+
+            transform: translate(-50%, -90%);
+        
+            display: block;
+        
+            margin: 78px auto;
+        
+            &:hover {
+                background-color: $brand-color;
+            }
+        }
     }
 
     .right-block {
@@ -98,17 +149,5 @@
                 justify-content: flex-start;
             }
         }
-    }
-}
-
-.product__btn {
-    @include add_button(170px, 50px, $grey-color, #fff);
-
-    display: block;
-
-    margin: 78px auto;
-
-    &:hover {
-        background-color: $brand-color;
     }
 }

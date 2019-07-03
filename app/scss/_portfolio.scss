@@ -41,65 +41,64 @@
 }
 
 .portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
     width: 1400px;
 
     margin: 0 auto;
 
-    .portfolio-first-line,
-    .portfolio-second-line {
-        display: flex;
+    .portfolio-block {
+        position: relative;
 
-        .portfolio-block {
-            position: relative;
+        cursor: pointer;
 
-            cursor: pointer;
+        color: #fff;
 
-            color: #fff;
+        .portfolio__image {
+            display: block;
 
-            .portfolio__image {
-                display: block;
+            width: 100%;
+            height: 100%;
 
-                width: 100%;
-                height: 100%;
-
-                transition: all .25s ease-in-out;
-
-                &:hover {
-                    filter: brightness(30%);
-                }
-            }
+            transition: all .25s ease-in-out;
 
             &:hover {
-
-                .information-block {
-                    visibility: visible;
-                }
+                filter: brightness(30%);
             }
-            
-            .information-block {
-                visibility: hidden;
+        }
 
-                .portfolio__add {
-                    position: absolute;
-                    top: 45%;
-                    left: 50%;
+        &:hover {
+
+            .information-block {
+                display: block;
+            }
+        }
+            
+        .information-block {
+            display: none;
+
+            .portfolio__add {
+                position: absolute;
+                top: 45%;
+                left: 50%;
     
-                    font-size: 24px;
+                font-size: 24px;
     
-                    transform: translate(-50%, -55%);
-                }
+                transform: translate(-50%, -55%);
+            }
     
-                .portfolio__title {
-                    position: absolute;
-                    top: 60%;
-                    left: 50%;
+            .portfolio__title {
+                position: absolute;
+                top: 60%;
+                left: 50%;
     
-                    font-family: 'Lato Regular';
-                    font-size: 16px;
-                    line-height: 1.375;
+                font-family: 'Lato Regular';
+                font-size: 16px;
+                line-height: 1.375;
     
-                    transform: translate(-50%, -40%);
-                }
+                transform: translate(-50%, -40%);
             }
         }
     }

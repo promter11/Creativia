@@ -83,6 +83,8 @@
             .information__btn {
                 @include add_button(120px, 40px, $grey-color-2, #fff);
 
+                font-size: 16px;
+
                 &:hover {
                     background-color: $brand-color;
                     color: #fff;

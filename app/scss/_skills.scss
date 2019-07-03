@@ -34,42 +34,47 @@
         .skill {
             margin: 0 15px;
 
-            .skill-circle-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-    
-                width: 142px;
-                height: 142px;
-    
+            .skill-circle {
+                position: relative;
+
+                width: 146px;
+                height: 146px;
+        
+                margin: 0 auto 24px auto;
+        
+                border: 3px solid $border-color;
                 border-radius: 50%;
-    
-                margin: 0 auto 26px auto;
-    
-                background-color: $brand-color;
-    
-                .skill-circle {
-                    width: 97%;
-                    height: 97%;
         
-                    margin: 0 auto;
-        
+                background-color: transparent;
+
+                &:after {
+                    content: '';
+
+                    position: absolute;
+                    top: -3px;
+                    left: -3px;
+
+                    width: 100%;
+                    height: 100%;
+
+                    border: 3px solid transparent;
+                    border-top: 3px solid $brand-color;
+                    border-left: 3px solid $brand-color;
+                    border-bottom: 3px solid $brand-color;
                     border-radius: 50%;
+                }
         
-                    background-color: #fff;
+                .number {
+                    font-family: 'Lato Light';
+                    font-size: 40px;
+                    line-height: 2.375;
         
-                    .number {
-                        font-family: 'Lato Light';
-                        font-size: 40px;
-                        line-height: 2.375;
+                    color: $brand-color;
         
-                        color: $brand-color;
+                    .percent {
+                        line-height: 142px;
         
-                        .percent {
-                            line-height: 142px;
-        
-                            color: $grey-color;
-                        }
+                        color: $grey-color;
                     }
                 }
             }
