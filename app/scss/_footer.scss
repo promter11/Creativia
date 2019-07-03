@@ -1,0 +1,13 @@
+.footer-section {
+    display: flex;
+    justify-content: center;
+
+    padding: 30px 0;
+
+    background-color: $grey-color-2;
+
+    .footer-logo {
+        width: 120px;
+        height: 40px;
+    }
+}

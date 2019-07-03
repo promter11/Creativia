@@ -1,7 +1,7 @@
 .header {
     position: relative;
 
-    background: rgba(0, 0, 0, 0.7) url(/img/header-bg.png) no-repeat top center / cover;
+    background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png) no-repeat top center / cover;
     background-blend-mode: darken;
 }
 
@@ -30,7 +30,7 @@
 
     cursor: pointer;
 
-    color: $arrow-color;
+    color: $lightgrey-color;
 
     &:hover {
         color: $brand-color;

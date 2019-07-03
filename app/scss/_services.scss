@@ -1,0 +1,109 @@
+.services-section {
+    padding: 102px 0 98px 0;
+
+    background-color: $grey-color-2;
+}
+
+.services-header {
+    margin-bottom: 98px;
+
+    text-align: center;
+
+    .services__title {
+        margin-bottom: 48px;
+
+        color: #fff;
+
+        .services__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .services__description {
+        color: $lightgrey-color;
+
+        .services__description--colored {
+            color: $brand-color;
+        }
+    }
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .service-block {
+        width: 570px;
+
+        &:hover {
+
+            .service-block-header {
+
+                .service-img {
+                    background-color: $brand-color;
+                    
+                    .service__image {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .service__description {
+                background-color: $description-background-color-2;
+
+                color: #fff;
+            }
+        }
+
+        .service-block-header {
+            display: flex;
+            align-items: center;
+
+            margin: 28px 0;
+
+            .service-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 66px;
+                height: 56px;
+
+                margin-right: 30px;
+
+                clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
+
+                transition: all .5s ease-in-out;
+
+                background-color: $lightgrey-color;
+
+                .service__image {
+                    font-size: 26px;
+
+                    transition: all .5s ease-in-out;
+
+                    color: $grey-color-2;
+                }
+            }
+
+            .service__title {
+                text-transform: uppercase;
+
+                color: #fff;
+            }
+        }
+
+        .service__description {
+            padding: 30px 36px;
+
+            font-family: 'Lato Regular';
+
+            transition: all .5s ease-in-out;
+
+            background-color: $description-background-color;
+            color: #fff;
+        }
+    }
+}

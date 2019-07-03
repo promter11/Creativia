@@ -1,0 +1,120 @@
+.blog-section {
+    padding: 114px 0 86px 0;
+}
+
+.blog-header {
+    margin-bottom: 98px;
+
+    text-align: center;
+
+    .blog__title {
+        margin-bottom: 52px;
+
+        .blog__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .blog__description--colored {
+        color: $brand-color;
+    }
+}
+
+.blog-content {
+    width: 970px;
+
+    margin: 0 auto;
+    
+    .new-block {
+        display: flex;
+        align-items: flex-start;
+
+        margin-bottom: 50px;
+
+        .new-img {
+            margin-right: 30px;
+        }
+
+        .new-information {
+
+            .information__title {
+                font-family: 'Raleway Semibold';
+
+                color: $grey-color-2;
+            }
+
+            .information-block {
+                display: flex;
+
+                color: $lightgrey-color;
+
+                .user-block,
+                .comment-block,
+                .view-block {
+                    display: flex;
+                    align-items: center;
+
+                    margin: 20px 20px 20px 0;
+
+                    .user__image,
+                    .comment__image,
+                    .view__image {
+                        margin-right: 6px;
+                    }
+
+                    .user__name,
+                    .comment__number,
+                    .view__number {
+                        font-family: 'Lato Regular';
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .information__description {
+                margin-bottom: 20px;
+
+                font-family: 'Lato Regular';
+                line-height: 1.25;
+
+                text-align: justify;
+            }
+
+            .information__btn {
+                @include add_button(120px, 40px, $grey-color-2, #fff);
+
+                &:hover {
+                    background-color: $brand-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .blog-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+
+        margin: 0 auto;
+
+        font-size: 24px;
+
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        transition: all .5s ease-in-out;
+
+        background-color: $light-color;
+        color: $lightgrey-color;
+
+        &:hover {
+            background-color: $lightgrey-color;
+            color: $light-color;
+        }
+    }
+}

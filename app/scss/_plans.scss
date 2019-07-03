@@ -1,0 +1,90 @@
+.plans-section {
+    padding: 108px 0 98px 0;
+}
+
+.plans-header {
+    margin-bottom: 102px;
+
+    text-align: center;
+
+    .plans__title {
+        margin-bottom: 52px;
+
+        .plans__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .plans__description--colored {
+        color: $brand-color;
+    }
+}
+
+.plans-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    .plan-block {
+        width: 270px;
+
+        border: 1px solid $border-color;
+
+        &:hover {
+
+            .plan__price,
+            .plan__btn {
+                background-color: $brand-color;
+                color: #fff;
+            }
+        }
+
+        .plan__title {
+            padding: 16px 0;
+
+            text-transform: uppercase;
+
+            background-color: $grey-color-2;
+            color: #fff;
+        }
+
+        .plan__price {
+            padding: 24px 0;
+            
+            font-family: 'Lato Black';
+            font-size: 50px;
+
+            transition: all .5s ease-in-out;
+
+            background-color: $item-color;
+            color: $grey-color-2;
+
+            .plan__price--index {
+                font-family: 'Lato Regular';
+                font-size: 16px;
+            }
+        }
+
+        .plan-list {
+
+            .list__item {
+                margin: 5px 0;
+
+                font-family: 'Lato Regular';
+                font-size: 16px;
+                line-height: 3.25;
+                text-transform: uppercase;
+
+                border-bottom: 1px solid $border-color;
+            }
+        }
+
+        .plan__btn {
+            margin: 20px 0;
+
+            @include add_button(230px, 40px, $grey-color-2, #fff);
+        }
+    }
+}

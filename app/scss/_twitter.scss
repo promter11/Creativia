@@ -1,0 +1,43 @@
+.twitter-section {
+    position: relative;
+
+    padding: 98px 0;
+
+    overflow: hidden;
+
+    background-color: $grey-color-2;
+
+    .twitter-icon {
+        position: absolute;
+        bottom: -10px;
+        left: 40px;
+
+        transform: rotate(-20deg);
+        
+        font-size: 220px;
+
+        color: $twitter-icon-color;
+    }
+}
+
+.twitter-content {
+    text-align: center;
+
+    .twitter__icon {
+        font-size: 46px;
+
+        margin-bottom: 24px;
+
+        color: $brand-color;
+    }
+
+    .twitter__description {
+        width: 640px;
+
+        margin: 0 auto;
+
+        font-family: 'Lato Regular';
+
+        color: #fff;
+    }
+}

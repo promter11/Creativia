@@ -1,0 +1,120 @@
+.find-section {
+    padding-top: 110px;
+}
+
+.find-header {
+    text-align: center;
+
+    .find__title {
+        margin-bottom: 52px;
+
+        .find__title--colored {
+            color: $brand-color;
+        }
+    }
+
+    .find__description {
+        margin-bottom: 96px;
+
+        .find__description--colored {
+            color: $brand-color;
+        }
+    }
+}
+
+.find-content {
+    padding-top: 100px;
+
+    background: url(../img/map-img.png) no-repeat top center / cover;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 970px;
+
+        margin: 0 auto;
+    }
+
+    .contacts-block {
+        width: 300px;
+
+        padding: 34px 0 34px 26px;
+        margin-right: 134px;
+
+        font-family: 'Lato Regular';
+        font-size: 16px;
+        line-height: 1.2;
+
+        background-color: $grey-color-2;
+        color: #fff;
+
+        .contacts__title {
+            margin-bottom: 20px;
+
+            text-transform: capitalize;
+
+            font-size: 16px;
+        }
+
+        span {
+            display: block;
+
+            margin-bottom: 10px;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .form-block {
+        padding: 48px 42px 24px 42px;
+
+        box-shadow: 0px 0px 9px 0px rgba(5, 5, 6, 0.17);
+
+        background-color: #fff;
+
+        .form-message {
+            display: flex;
+            flex-direction: column;
+
+            .form__title {
+                margin-bottom: 52px;
+
+                text-transform: uppercase;
+            }
+
+            input,
+            textarea {
+                width: 370px;
+
+                padding: 10px;
+                margin-bottom: 20px;
+
+                outline: none;
+
+                border: 1px solid $border-color;
+            }
+
+            textarea {
+                height: 84px;
+
+                resize: none;
+            }
+
+            .form__btn {
+                @include add_button(120px, 40px, $grey-color-2, #fff);
+
+                font-family: 'Lato Regular';
+                font-size: 16px;
+                text-transform: uppercase;
+
+                margin: 0 0 0 auto;
+
+                cursor: pointer;
+            }
+        }
+    }
+}
