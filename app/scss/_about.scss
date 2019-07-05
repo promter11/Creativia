@@ -23,16 +23,7 @@
 }
 
 .about-content-blocks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     margin-bottom: 98px;
-
-    .about-content-block-left,
-    .about-content-block-right {
-        width: 570px;
-    }
 
     .about-content-block-left {
         text-align: justify;
@@ -149,8 +140,7 @@
 
     .line {
         position: relative;
-
-        width: 516px;
+        
         height: 1px;
 
         margin: 0 auto;

@@ -1,4 +1,4 @@
-.header {
+.header-section {
     position: relative;
 
     background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png) no-repeat top center / cover;
@@ -9,18 +9,7 @@
 .right__arrow {
     position: absolute;
     top: 50%;
-}
 
-.left__arrow {
-    left: 36px;
-}
-
-.right__arrow {
-    right: 36px;
-}
-
-.left__arrow,
-.right__arrow {
     width: 17px;
     height: 28px;
 
@@ -35,6 +24,14 @@
     &:hover {
         color: $brand-color;
     }
+}
+
+.left__arrow {
+    left: 36px;
+}
+
+.right__arrow {
+    right: 36px;
 }
 
 .header-menu-wrapper {
@@ -58,24 +55,34 @@
         }
     }
 
-    .header-list {
-        display: flex;
+    .header-nav {
 
-        .list__item {
-            margin-left: 34px;
+        .header-list-btn {
+            font-size: 24px;
 
-            .list__link {
-                font-size: 18px;
-                text-transform: uppercase;
+            cursor: pointer;
 
-                color: $list-item-color;
+            color: $lightgrey-color;
+        }
 
-                &:hover {
-                    padding: 18px 0;
+        .header-list {
 
-                    border-bottom: 3px solid $brand-color;
-
-                    color: #fff;
+            .list__item {
+                margin-left: 34px;
+    
+                .list__link {
+                    font-size: 18px;
+                    text-transform: uppercase;
+    
+                    color: $list-item-color;
+    
+                    &:hover {
+                        padding: 18px 0;
+    
+                        border-bottom: 3px solid $brand-color;
+    
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -106,7 +113,7 @@
     }
 
     .header__btn {
-        margin: 0 15px;
+        margin: 10px 15px;
 
         @include add_button(170px, 55px, $grey-color, #fff);
 

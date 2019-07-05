@@ -5,6 +5,8 @@
 
     overflow: hidden;
 
+    z-index: 100;
+
     background-color: $grey-color-2;
 
     .twitter-icon {
@@ -16,11 +18,15 @@
         
         font-size: 220px;
 
+        z-index: -10;
+
         color: $twitter-icon-color;
     }
 }
 
 .twitter-content {
+    margin: 0 auto;
+
     text-align: center;
 
     .twitter__icon {
@@ -32,10 +38,6 @@
     }
 
     .twitter__description {
-        width: 640px;
-
-        margin: 0 auto;
-
         font-family: 'Lato Regular';
 
         color: #fff;

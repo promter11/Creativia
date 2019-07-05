@@ -27,19 +27,7 @@
 
     background: url(../img/map-img.png) no-repeat top center / cover;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        width: 970px;
-
-        margin: 0 auto;
-    }
-
     .contacts-block {
-        width: 300px;
-
         padding: 34px 0 34px 26px;
         margin-right: 134px;
 
@@ -88,8 +76,6 @@
 
             input,
             textarea {
-                width: 370px;
-
                 padding: 10px;
                 margin-bottom: 20px;
 

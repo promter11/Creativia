@@ -21,14 +21,12 @@
 }
 
 .plans-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     text-align: center;
 
     .plan-block {
         width: 270px;
+
+        margin: 0 auto 20px auto;
 
         border: 1px solid $border-color;
 

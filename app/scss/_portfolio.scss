@@ -15,17 +15,18 @@
 
     .portfolio-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
 
-        width: 430px;
-
-        margin: 0 auto 102px auto;
+        margin-bottom: 102px;
 
         .list__item {
             font-family: 'Lato Bold';
             font-size: 16px;
             line-height: 1.375;
             text-transform: uppercase;
+
+            margin: 0 10px;
 
             .list__link {
                 transition: color .5s ease-out;
@@ -41,12 +42,6 @@
 }
 
 .portfolio-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    width: 1400px;
-
     margin: 0 auto;
 
     .portfolio-block {
@@ -58,9 +53,6 @@
 
         .portfolio__image {
             display: block;
-
-            width: 100%;
-            height: 100%;
 
             transition: all .25s ease-in-out;
 

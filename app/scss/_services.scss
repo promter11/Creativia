@@ -29,13 +29,9 @@
 }
 
 .services-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 
     .service-block {
-        width: 570px;
+        margin: 0 auto;
 
         &:hover {
 

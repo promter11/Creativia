@@ -2,13 +2,11 @@
     padding: 108px 0;
 
     .features-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         text-align: center;
 
         .features-block {
+            width: 270px;
+
             margin: 0 15px;
 
             .feature-hexagon-outside {
