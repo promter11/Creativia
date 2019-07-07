@@ -21,15 +21,13 @@
 }
 
 .blog-content {
-    width: 970px;
-
-    margin: 0 auto;
     
     .new-block {
         margin-bottom: 50px;
 
         .new-img {
-            margin-right: 30px;
+            display: flex;
+            align-items: center;
         }
 
         .new-information {

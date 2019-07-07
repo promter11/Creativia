@@ -110,7 +110,7 @@
         }
 
         .front-block {
-            bottom: -125px;
+            bottom: -115px;
 
             clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
 
@@ -118,7 +118,7 @@
         }
 
         .back-block {
-            top: 150px;
+            top: 205px;
 
             z-index: -10;
 
@@ -131,14 +131,12 @@
             @include add_button(170px, 50px, $description-color, #fff);
 
             position: absolute;
-            top: 90%;
+            bottom: -10%;
             left: 50%;
 
-            transform: translate(-50%, -90%);
-        
             display: block;
-        
-            margin: 78px auto;
+
+            transform: translate(-50%, 10%);
         
             &:hover {
                 background-color: $brand-color;

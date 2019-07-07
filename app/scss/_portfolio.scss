@@ -15,6 +15,7 @@
 
     .portfolio-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
@@ -26,7 +27,7 @@
             line-height: 1.375;
             text-transform: uppercase;
 
-            margin: 0 10px;
+            margin: 6px 10px;
 
             .list__link {
                 transition: color .5s ease-out;

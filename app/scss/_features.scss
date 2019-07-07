@@ -1,5 +1,5 @@
 .features-section {
-    padding: 108px 0;
+    padding-bottom: 108px;
 
     .features-content {
         text-align: center;
@@ -14,8 +14,6 @@
 
                 width: 86px;
                 height: 76px;
-
-                line-height: 82px;
 
                 margin: 0 auto 36px auto;
 
@@ -32,6 +30,10 @@
                     left: 1px;
                     right: 1px;
                     bottom: 1px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
 
