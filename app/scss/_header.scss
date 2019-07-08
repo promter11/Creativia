@@ -1,7 +1,9 @@
 .header-section {
     position: relative;
 
-    background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png) no-repeat top center / cover;
+    transition: background-image .5s ease-in-out;
+
+    background: rgba(0, 0, 0, 0.7) url(../img/header-bg-1.png) no-repeat top center / cover;
     background-blend-mode: darken;
 }
 

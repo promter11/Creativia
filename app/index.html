@@ -7,14 +7,14 @@
 
     <title>Creativia</title>
 
-    <script src="js/libs/libs.min.js"></script>
+    <script src="libs/js/libs.min.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header-section">
+    <header class="header-section" id="header">
         <i class="fas fa-chevron-left left__arrow"></i>
         <i class="fas fa-chevron-right right__arrow"></i>
         <div class="header-menu-wrapper">
@@ -28,14 +28,14 @@
                     <i class="fas fa-bars header-list-btn"></i>
                     <nav class="header-nav">
                         <ul class="header-list">
-                            <li class="list__item"><a class="list__link" href="#">Home</a></li>
-                            <li class="list__item"><a class="list__link" href="#">About us</a></li>
-                            <li class="list__item"><a class="list__link" href="#">Portfolio</a></li>
-                            <li class="list__item"><a class="list__link" href="#">Clients</a></li>
-                            <li class="list__item"><a class="list__link" href="#">Team</a></li>
-                            <li class="list__item"><a class="list__link" href="#">Services</a></li>
-                            <li class="list__item"><a class="list__link" href="#">Blog</a></li>
-                            <li class="list__item"><a class="list__link" href="#">Contact</a></li>
+                            <li class="list__item"><a class="list__link" href="#header">Home</a></li>
+                            <li class="list__item"><a class="list__link" href="#about">About us</a></li>
+                            <li class="list__item"><a class="list__link" href="#portfolio">Portfolio</a></li>
+                            <li class="list__item"><a class="list__link" href="#clients">Clients</a></li>
+                            <li class="list__item"><a class="list__link" href="#teamwork">Team</a></li>
+                            <li class="list__item"><a class="list__link" href="#services">Services</a></li>
+                            <li class="list__item"><a class="list__link" href="#blog">Blog</a></li>
+                            <li class="list__item"><a class="list__link" href="#find">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </header>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="about-content">
                 <h1 class="about__title">about <span class="about__title--colored">creativia</span></h1>
@@ -59,25 +59,28 @@
                     <div class="about-content-block-left">
                         <p class="block-left__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae.</p>
                         <div class="block-who">
-                            <a class="block-title" href="#">
+                            <a class="block-title" href="#who">
                                 <i class="fas fa-plus-circle image"></i>
+                                <i class="fas fa-minus-circle image image-minus"></i>
                                 <h2 class="title">Who is creativia</h2>
                             </a>
-                            <p class="description active">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                            <p class="description active" id="who">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                         </div>
                         <div class="block-experiences">
-                            <a class="block-title" href="#">
+                            <a class="block-title" href="#experiences">
                                 <i class="fas fa-plus-circle image"></i>
+                                <i class="fas fa-minus-circle image image-minus"></i>
                                 <h2 class="title">Experiences</h2>
                             </a>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                            <p class="description" id="experiences">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                         </div>
                         <div class="block-learn-more">
-                            <a class="block-title" href="#">
+                            <a class="block-title" href="#learn-more">
                                 <i class="fas fa-plus-circle image"></i>
+                                <i class="fas fa-minus-circle image image-minus"></i>
                                 <h2 class="title">Learn more</h2>
                             </a>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                            <p class="description" id="learn-more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
                         </div>
                     </div>
                     <div class="about-content-block-right">
@@ -94,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="features-section">
+    <section class="features-section" id="features">
         <div class="container">
             <div class="features-content">
                 <div class="features-block">
@@ -136,7 +139,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="portfolio">
         <div class="container">
             <div class="portfolio-header">
                 <h1 class="portfolio__title">portfolio</h1>
@@ -207,7 +210,7 @@
             </div>
         </div>
     </section>
-    <section class="product-section">
+    <section class="product-section" id="product">
         <div class="container">
             <div class="product-header">
                 <h1 class="product__title">our <span class="product__title--colored">product features</span></h1>
@@ -277,7 +280,7 @@
             </div>
         </div>
     </section>
-    <section class="clients-section">
+    <section class="clients-section" id="clients">
         <div class="container">
             <div class="clients-header">
                 <h1 class="clients__title">our <span class="clients__title--colored">clients</span></h1>
@@ -285,8 +288,22 @@
             </div>
             <div class="clients-content">
                 <div class="clients-content-block-left">
-                    <div class="review-block">
-                        <h2 class="review__title">Happy clients say</h2>
+                    <h2 class="review__title">Happy clients say</h2>
+                    <div class="review-block review-block-1">
+                        <p class="review__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
+                        <div class="client-block">
+                            <img class="client__image" src="img/client-img.png" alt="Client">
+                            <h3 class="client__name">Amr Srour</h3>
+                        </div>
+                    </div>
+                    <div class="review-block review-block-2">
+                        <p class="review__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
+                        <div class="client-block">
+                            <img class="client__image" src="img/client-img.png" alt="Client">
+                            <h3 class="client__name">Amr Srour</h3>
+                        </div>
+                    </div>
+                    <div class="review-block review-block-3">
                         <p class="review__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
                         <div class="client-block">
                             <img class="client__image" src="img/client-img.png" alt="Client">
@@ -322,7 +339,7 @@
             </div>
         </div>
     </section>
-    <section class="teamwork-section">
+    <section class="teamwork-section" id="teamwork">
         <div class="container">
             <div class="teamwork-header">
                 <h1 class="teamwork__title">our <span class="teamwork__title--colored">teamwork</span></h1>
@@ -431,7 +448,7 @@
             </div>
         </div>
     </section>
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <div class="container">
             <div class="skills-header">
                 <h1 class="skills__title">our <span class="skills__title--colored">skills</span></h1>
@@ -471,7 +488,7 @@
             </div>
         </div>
     </section>
-    <section class="services-section">
+    <section class="services-section" id="services">
         <div class="container">
             <div class="services-header">
                 <h1 class="services__title">our <span class="services__title--colored">services</span></h1>
@@ -535,7 +552,7 @@
             </div>
         </div>
     </section>
-    <section class="plans-section">
+    <section class="plans-section" id="plans">
         <div class="container">
             <div class="plans-header">
                 <h1 class="plans__title">plans <span class="plans__title--colored">bestseller</span></h1>
@@ -597,14 +614,14 @@
             </div>
         </div>
     </section>
-    <section class="twitter-section">
+    <section class="twitter-section" id="twitter">
         <i class="fab fa-twitter twitter-icon"></i>
         <div class="twitter-content">
             <i class="fab fa-twitter twitter__icon"></i>
             <p class="twitter__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Integer sed magna vei veiit dignissim iuctus eu in urna. Dapibus egestas turpis.</p>
         </div>
     </section>
-    <section class="blog-section">
+    <section class="blog-section" id="blog">
         <div class="container">
             <div class="blog-header">
                 <h1 class="blog__title">our <span class="blog__title--colored">blog</span></h1>
@@ -648,22 +665,48 @@
                             </div>
                             <div class="comment-block">
                                 <i class="fas fa-comment comment__image"></i>
-                                <h3 class="comment__number">1205</h3>
+                                <h3 class="comment__number">652</h3>
                             </div>
                             <div class="view-block">
                                 <i class="far fa-eye view__image"></i>
-                                <h3 class="view__number">16204</h3>
+                                <h3 class="view__number">12140</h3>
                             </div>
                         </div>
                         <p class="information__description">Integer ornare libero nisi. Duis ac magna urna. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus...</p>
                         <button class="information__btn">View more</button>
                     </div>
                 </div>
+                <div class="other-news">
+                    <div class="new-block">
+                        <div class="new-img">
+                            <img class="new__image" src="img/blog-img-3.png" alt="New Image">
+                        </div>
+                        <div class="new-information">
+                            <h2 class="information__title">Lorem ipsum dolor sit amet, consectetur</h2>
+                            <div class="information-block">
+                                <div class="user-block">
+                                    <i class="fas fa-user user__image"></i>
+                                    <h3 class="user__name">admin</h3>
+                                </div>
+                                <div class="comment-block">
+                                    <i class="fas fa-comment comment__image"></i>
+                                    <h3 class="comment__number">780</h3>
+                                </div>
+                                <div class="view-block">
+                                    <i class="far fa-eye view__image"></i>
+                                    <h3 class="view__number">13561</h3>
+                                </div>
+                            </div>
+                            <p class="information__description">Integer ornare libero nisi. Duis ac magna urna. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus...</p>
+                            <button class="information__btn">View more</button>
+                        </div>
+                    </div>
+                </div>
                 <i class="fas fa-chevron-down blog-arrow"></i>
             </div>
         </div>
     </section>
-    <section class="follow-section">
+    <section class="follow-section" id="follow">
         <h1 class="follow__title">Follow <span class="follow__title--colored">Creativia</span></h1>
         <div class="follow-content">
             <div class="follow-block">
@@ -700,7 +743,7 @@
             </div>
         </div>
     </section>
-    <section class="find-section">
+    <section class="find-section" id="find">
         <div class="container">
             <div class="find-header">
                 <h1 class="find__title">Find us <span class="find__title--colored">here</span></h1>
@@ -728,7 +771,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer-section">
+    <footer class="footer-section" id="footer">
         <div class="footer-logo">
             <a class="footer__link" href="">
                 <img class="footer__image" src="img/creativia.png" alt="Creativia Logo">

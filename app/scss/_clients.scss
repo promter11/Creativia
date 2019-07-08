@@ -36,15 +36,15 @@
 
         text-align: center;
 
-        .review-block {
+        .review__title {
+            margin-bottom: 52px;
 
-            .review__title {
-                margin-bottom: 52px;
+            text-transform: uppercase;
 
-                text-transform: uppercase;
+            color: #fff;
+        }
 
-                color: #fff;
-            }
+        .review-block-1 {
 
             .review__description {
                 margin-bottom: 52px;
@@ -70,13 +70,18 @@
             }
         }
 
+        .review-block-2,
+        .review-block-3 {
+            display: none;
+        }
+
         .square-block {
             display: flex;
             justify-content: center;
 
             .square {
-                width: 8px;
-                height: 8px;
+                width: 10px;
+                height: 10px;
 
                 margin: 0 3px;
 
@@ -87,12 +92,15 @@
                 &:hover {
                     background-color: $brand-color;
                 }
+
+                &:first-child {
+                    background-color: $brand-color;
+                }
             }
         }
     }
 
     .clients-content-block-right {
-        
         
         .companies-block {
             display: flex;

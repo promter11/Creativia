@@ -43,9 +43,13 @@
                 display: flex;
                 align-items: center;
 
+                position: relative;
+
                 height: 44px;
 
                 border: 1px solid $border-color;
+
+                transition: all .25s ease-in-out;
 
                 background-color: $item-color;
                 color: $grey-color;
@@ -55,14 +59,24 @@
                 }
 
                 .image {
+                    position: absolute;
+                    top: 50%;
+                    left: 20px;
+
+                    transform: translateY(-50%);
+
                     margin: 0 20px;
 
                     width: 18px;
                     height: 18px;
                 }
 
+                .image-minus {
+                    display: none;
+                }
+
                 .title {
-                    margin-left: 32px;
+                    margin-left: 112px;
     
                     font-family: 'Raleway Bold';
                     font-size: 20px;
@@ -131,34 +145,6 @@
             z-index: 0;
 
             background: url(../img/right-img.png) no-repeat;
-        }
-    }
-}
-
-.separator {
-
-    .line {
-        position: relative;
-        
-        height: 1px;
-
-        margin: 0 auto;
-
-        background-color: $grey-color-2;
-
-        .hexagon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            width: 20px;
-            height: 20px;
-
-            clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
-
-            background-color: $grey-color;
         }
     }
 }
