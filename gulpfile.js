@@ -70,8 +70,8 @@ gulp.task('minify-css', () => {
 
 gulp.task('minify-js', () => {
     return gulp.src('app/js/*.js')
-        .pipe(uglify())
         .pipe(concat('scripts.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 
@@ -96,6 +96,9 @@ gulp.task('build-dist', (done) => {
     
     const buildImg = gulp.src('app/img/**/*')
         .pipe(gulp.dest('dist/img'));
+    
+    const buildFonts = gulp.src('app/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'));
 
     done();
 });
