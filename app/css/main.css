@@ -127,20 +127,64 @@ button {
     min-width: 320px;
   }
   .header-menu .header-list-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+  }
+  .header-menu .header-list {
+    position: fixed;
+    top: 0;
+    left: -100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    -webkit-transition: left 1s ease-in-out;
+    -o-transition: left 1s ease-in-out;
+    transition: left 1s ease-in-out;
+    background-color: #262626;
   }
-  .header-menu .header-list {
-    display: none;
+  .header-menu .header-list:hover {
+    padding: 0;
+    border: none;
+  }
+  .header-menu .header-list .header-list-close-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: block;
+  }
+  .header-menu .header-list .list__item {
+    margin: 24px 0;
+  }
+  .header-menu .header-list .list__item .list__link {
+    padding: 0;
+  }
+  .header-menu .header-list .list__item .list__link:hover {
+    border: none;
   }
   .separator .line {
-    width: 320px;
+    width: 300px;
   }
   .about-content-blocks {
     display: -webkit-box;
@@ -159,7 +203,7 @@ button {
   }
   .about-content-blocks .about-content-block-left,
   .about-content-blocks .about-content-block-right {
-    min-width: 320px;
+    min-width: 300px;
   }
   .about-content-blocks .about-content-block-right {
     display: none;
@@ -215,7 +259,7 @@ button {
   .product-content .right-block,
   .product-content .left-block,
   .product-content .center-block {
-    width: 320px;
+    width: 300px;
   }
   .product-content .left-block {
     margin-bottom: 20px;
@@ -228,7 +272,7 @@ button {
     display: none;
   }
   .product-content .feature__title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .product-content .product__btn {
     margin-bottom: -30px;
@@ -265,7 +309,7 @@ button {
   }
   .clients-content .clients-content-block-left,
   .clients-content .clients-content-block-right {
-    min-width: 320px;
+    min-width: 300px;
   }
   .teamwork-content .teamwork-block {
     display: -webkit-box;
@@ -322,7 +366,7 @@ button {
     align-items: center;
   }
   .services-content .service-block {
-    min-width: 320px;
+    min-width: 300px;
   }
   .plans-content {
     display: -webkit-box;
@@ -346,7 +390,7 @@ button {
     margin-bottom: 40px;
   }
   .twitter-content {
-    min-width: 320px;
+    min-width: 300px;
   }
   .blog-content .new-block {
     display: -webkit-box;
@@ -368,10 +412,10 @@ button {
     align-items: center;
   }
   .blog-content .new-block .new__image {
-    width: 320px;
+    width: 300px;
   }
   .blog-content .new-block .new-information {
-    width: 320px;
+    width: 300px;
   }
   .follow-content {
     display: -webkit-box;
@@ -409,7 +453,7 @@ button {
   }
   .find-container .form-block .input,
   .find-container .form-block .textarea {
-    width: 320px;
+    width: 300px;
   }
 }
 
@@ -588,14 +632,36 @@ button {
     display: none;
   }
   .header-menu .header-list {
+    position: static;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 0;
+    margin-left: 40px;
+    background: none;
+  }
+  .header-menu .header-list .header-list-close-btn {
+    display: none;
+  }
+  .header-menu .header-list .list__item {
+    margin: 0 34px 0 0;
+  }
+  .header-menu .header-list .list__item .list__link {
+    padding: 18px 0;
+  }
+  .header-menu .header-list .list__item .list__link:hover {
+    border-bottom: 3px solid #ff0036;
   }
   .about-content-blocks {
     -webkit-box-orient: horizontal;
@@ -761,7 +827,7 @@ button {
 }
 
 .header-menu-wrapper {
-  height: 66px;
+  max-height: 66px;
   background-color: #000;
 }
 
@@ -778,6 +844,7 @@ button {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .header-menu .header-logo {
@@ -789,25 +856,34 @@ button {
 }
 
 .header-menu .header-logo .logo__link .logo__image {
-  width: 100%;
-  margin-left: 10px;
+  max-width: 100%;
 }
 
 .header-menu .header-list-btn {
-  width: 100%;
-  margin-right: 26px;
   font-size: 24px;
   cursor: pointer;
   color: #a4a4a4;
 }
 
+.header-menu .header-list-btn:hover {
+  color: #ff0036;
+}
+
 .header-menu .header-nav .header-list {
-  width: 100%;
   margin-right: 10px;
 }
 
-.header-menu .header-nav .header-list .list__item {
-  margin-left: 34px;
+.header-menu .header-nav .header-list .header-list-close-btn {
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+  color: #fff;
+}
+
+.header-menu .header-nav .header-list .header-list-close-btn:hover {
+  color: #a4a4a4;
 }
 
 .header-menu .header-nav .header-list .list__item .list__link {
@@ -817,8 +893,6 @@ button {
 }
 
 .header-menu .header-nav .header-list .list__item .list__link:hover {
-  padding: 18px 0;
-  border-bottom: 3px solid #ff0036;
   color: #fff;
 }
 
@@ -895,6 +969,7 @@ button {
 .about-content-blocks .about-content-block-left .block-experiences,
 .about-content-blocks .about-content-block-left .block-learn-more {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .about-content-blocks .about-content-block-left .block-who .block-title,
@@ -911,9 +986,6 @@ button {
   position: relative;
   height: 44px;
   border: 1px solid #e7e7e7;
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
   background-color: #f7f7f7;
   color: #131313;
 }
@@ -933,14 +1005,14 @@ button {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin: 0 20px;
   width: 18px;
   height: 18px;
+  margin: 0 20px;
 }
 
-.about-content-blocks .about-content-block-left .block-who .block-title .image-minus,
-.about-content-blocks .about-content-block-left .block-experiences .block-title .image-minus,
-.about-content-blocks .about-content-block-left .block-learn-more .block-title .image-minus {
+.about-content-blocks .about-content-block-left .block-who .block-title .image-reverse,
+.about-content-blocks .about-content-block-left .block-experiences .block-title .image-reverse,
+.about-content-blocks .about-content-block-left .block-learn-more .block-title .image-reverse {
   display: none;
 }
 
@@ -1393,17 +1465,17 @@ button {
   color: #fff;
 }
 
-.clients-content .clients-content-block-left .review-block-1 .review__description {
+.clients-content .clients-content-block-left .review-block .review__description {
   margin-bottom: 52px;
   font-family: 'Lato Regular';
   color: #a4a4a4;
 }
 
-.clients-content .clients-content-block-left .review-block-1 .client-block .client__image {
+.clients-content .clients-content-block-left .review-block .client-block .client__image {
   margin-bottom: 14px;
 }
 
-.clients-content .clients-content-block-left .review-block-1 .client-block .client__name {
+.clients-content .clients-content-block-left .review-block .client-block .client__name {
   margin-bottom: 26px;
   text-transform: uppercase;
   color: #ff0036;

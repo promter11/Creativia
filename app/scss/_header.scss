@@ -37,7 +37,7 @@
 }
 
 .header-menu-wrapper {
-    height: 66px;
+    max-height: 66px;
 
     background-color: #000;
 }
@@ -47,6 +47,8 @@
     justify-content: space-between;
     align-items: center;
 
+    position: relative;
+
     .header-logo {
         height: 66px;
 
@@ -54,34 +56,43 @@
             outline: none;
 
             .logo__image {
-                width: 100%;
-
-                margin-left: 10px;
+                max-width: 100%;
             }
         }
     }
 
     .header-list-btn {
-        width: 100%;
-
-        margin-right: 26px;
-
         font-size: 24px;
 
         cursor: pointer;
 
         color: $lightgrey-color;
+        
+        &:hover {
+            color: $brand-color;
+        }
     }
 
     .header-nav {
 
         .header-list {
-            width: 100%;
-
             margin-right: 10px;
 
+            .header-list-close-btn {
+                font-size: 30px;
+
+                cursor: pointer;
+
+                transition: color .5s ease-in-out;
+
+                color: #fff;
+
+                &:hover {
+                    color: $lightgrey-color;
+                }
+            }
+
             .list__item {
-                margin-left: 34px;
     
                 .list__link {
                     font-size: 18px;
@@ -90,10 +101,6 @@
                     color: $list-item-color;
     
                     &:hover {
-                        padding: 18px 0;
-    
-                        border-bottom: 3px solid $brand-color;
-    
                         color: #fff;
                     }
                 }

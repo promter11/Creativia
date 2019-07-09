@@ -10,14 +10,28 @@ $(document).ready(function() {
 
     // -----------------------------------------------------------------------------
 
+    // Открытие и закрытие navbar по клику на соответствующие иконки
+
+    $('.header-list-btn').click(function() {
+        $('.header-list').css({'left': '0'});
+    });
+
+    $('.header-list-close-btn').click(function() {
+        $('.header-list').css({'left': '-100%'});
+    });
+
+    // -----------------------------------------------------------------------------
+
     // Изменение background-image по клику на стрелки в секции header
+
+    const HEADER_BACKGROUND_IMAGES = 3;
 
     let backgroundImageCounter = 1;
 
     $('.left__arrow').click(function() {
         backgroundImageCounter++;
 
-        if (backgroundImageCounter > 3 || backgroundImageCounter < 1) {
+        if (backgroundImageCounter > HEADER_BACKGROUND_IMAGES || backgroundImageCounter < 1) {
             backgroundImageCounter = 1;
         }
 
@@ -27,7 +41,7 @@ $(document).ready(function() {
     $('.right__arrow').click(function() {
         backgroundImageCounter--;
 
-        if (backgroundImageCounter > 3 || backgroundImageCounter < 1) {
+        if (backgroundImageCounter > HEADER_BACKGROUND_IMAGES || backgroundImageCounter < 1) {
             backgroundImageCounter = 3;
         }
 
@@ -38,20 +52,53 @@ $(document).ready(function() {
 
     // Открытие разделов по клику в секции about
 
-    $('.about-content-blocks .block-title').click(function(event) {
-        event.preventDefault();
+    $('.block-who').click(function() {
+        $(this).find('.image').toggleClass('image-reverse');
 
-        $('.description').hide();
-    
-        $($(this).attr('href')).fadeIn();
+        $(this).find('.description').toggleClass('active');
     });
+
+    $('.block-experiences').click(function() {
+        $(this).find('.image').toggleClass('image-reverse');
+
+        $(this).find('.description').toggleClass('active');
+    });
+
+    $('.block-learn-more').click(function() {
+        $(this).find('.image').toggleClass('image-reverse');
+
+        $(this).find('.description').toggleClass('active');
+    });
+
+    // -----------------------------------------------------------------------------
+
+    // Изменение отзывов клиентов каждые 5 секунд в секции clients
+
+    const REVIEW_BLOCKS = 3;
+
+    let clientsCarouselCount = 1;
+
+    setInterval(function() {
+        clientsCarouselCount++;
+  
+        if (clientsCarouselCount > REVIEW_BLOCKS) {
+            clientsCarouselCount = 1;
+        }
+  
+        $('.review-block').hide();
+        $('.square-block .square').css('background-color', 'grey');
+        
+        $('.review-block-' + clientsCarouselCount).fadeIn(1000);
+        
+        $('.square-' + clientsCarouselCount).css('background-color', 'crimson');
+    }, 5000);
 
     // -----------------------------------------------------------------------------
 
     // Показать другие новости по клику на кнопку в секции blog
 
     $('.blog-content .blog-arrow').click(function() {
-        $('.blog-arrow').fadeOut();
+        $('.blog-arrow').hide();
 
         $('.other-news').slideDown(1000);
     });
