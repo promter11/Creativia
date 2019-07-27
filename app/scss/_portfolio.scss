@@ -52,14 +52,17 @@
 
         color: #fff;
 
+        &:hover {
+
+            .portfolio__image {
+                filter: brightness(30%);
+            }
+        }
+
         .portfolio__image {
             display: block;
 
-            transition: all .25s ease-in-out;
-
-            &:hover {
-                filter: brightness(30%);
-            }
+            transition: filter .25s ease-in-out;
         }
 
         &:hover {

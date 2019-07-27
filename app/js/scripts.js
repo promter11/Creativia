@@ -35,7 +35,7 @@ $(document).ready(function() {
             backgroundImageCounter = 1;
         }
 
-        $('.header-section').css('background-image', 'url(../img/header-bg-' + backgroundImageCounter + '.png)');
+        $('.header-section').css('background-image', 'url(../app/img/header-bg-' + backgroundImageCounter + '.png)');
     });
 
     $('.right__arrow').click(function() {
@@ -45,7 +45,7 @@ $(document).ready(function() {
             backgroundImageCounter = 3;
         }
 
-        $('.header-section').css('background-image', 'url(../img/header-bg-' + backgroundImageCounter + '.png)');
+        $('.header-section').css('background-image', 'url(../app/img/header-bg-' + backgroundImageCounter + '.png)');
     });
 
     // -----------------------------------------------------------------------------
